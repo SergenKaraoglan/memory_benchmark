@@ -53,3 +53,9 @@ function reset(){
     inputButton.value = "Start";
     score.innerText = 0;
 }
+
+answerInput.addEventListener("keyup", function(event) {
+    if (event.key == "Enter"){
+        main();
+    }
+});
